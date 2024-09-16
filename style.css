@@ -1,59 +1,73 @@
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} */
 
 :root {
-    --ff-primary: 'UnifrakturCook', serif;
+    --ff-primary: 'UnifrakturCook', cursive;
     --ff-secondary: 'Merriweather', serif;
-    --ff-tri: 'Great Vibes', serif;
+    --ff-tri: 'Great Vibes', cursive;
 
-    --fw-reg: 400;
+    /* --fw-reg: 400;
     --fw-bold: 700;
-
-    --clr-light: #e8e1cc;
-    --clr-accent: #f26a02;
-    --clr-accent2: #FC9B00;
-    --clr-dark: #00314A;
 
     --fs-h1: 4rem;
     --fs-h2: 2.5rem;
     --fs-h3: 1.5rem;
-    --fs-body: 1rem;
-
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-    0.125em 0.125em 0.25em rgba(0,0,0,.15);
-}
-
-html {
-    scroll-behavior: smooth;
-}  
-
-body {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
+    --fs-body: 1rem; */
 }
 
 h1 {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-h1);
+    font-family: var(--ff-tri);
+    font-size: 6em;
+    font-weight: 50;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: 0.2em;
+    position: relative;
+    bottom: -0.4em;
 }
 
 p {
     font-family: var(--ff-secondary);
+    font-weight: 2em;
 }
 
-.unifrakturcook-bold {
-    font-family: "UnifrakturCook", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-.great-vibes-regular {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
+.intro {
+    padding: 10em;
 }
   
+.intro-paragraph {
+    text-align: block;
+    padding: 1em;
+    border-style: solid;
+    border-width: 1em;
+    border-spacing: 1em;
+    display: center;
+}
+
+.macherie {
+    padding: 6em;
+    text-align: center;
+}
+
+.macherie h1 {
+    position: center;
+    font-weight: 50;
+    font-size: 6em;
+}
+
+.macherie p {
+    font-weight: 100;
+}
+
+.macherie-vid {
+    position: center;
+}
+
+.macherie-vid iframe {
+    border-style: solid;
+    border-width: 1em;
+}
+
