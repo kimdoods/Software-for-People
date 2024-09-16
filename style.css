@@ -24,8 +24,6 @@ h1 {
     font-weight: 580;
     text-align: center;
     line-height: 100%;
-    position: relative;
-    bottom: -0.4em;
 }
 
 h2 {
@@ -35,7 +33,6 @@ h2 {
     text-align: center;
     line-height: 100%;
     letter-spacing: 0.2em;
-    position: relative;
 }
 
 h3 {
@@ -45,7 +42,6 @@ h3 {
     text-align: center;
     line-height: 100%;
     letter-spacing: 0.1em;
-    position: relative;
     bottom: -0.4em;
 }
 
@@ -91,7 +87,7 @@ ul {
 
 /* Song & Lyrics - HTML Pages */
 .song {
-    padding: 2em;
+    padding: 2rem;
     text-align: center;
     margin: 0 auto;
     max-width: 100em;
@@ -102,10 +98,8 @@ ul {
 }
 
 .song h2 {
-    position: center;
     font-weight: 50;
     font-size: 6em;
-    bottom: -0.6em;
 }
 
 .song p {
@@ -114,7 +108,7 @@ ul {
 }
 
 .song-vid {
-    position: center;
+
 }
 
 .song-vid iframe {
