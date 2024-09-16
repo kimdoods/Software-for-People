@@ -10,17 +10,17 @@
     --ff-tri: 'Great Vibes', cursive;
 
     /* --fw-reg: 400;
-    --fw-bold: 700;
+    --fw-bold: 700; */
 
-    --fs-h1: 4rem;
-    --fs-h2: 2.5rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1rem; */
+    --fs-h1: 8em;
+    --fs-h2: 6em;
+    --fs-h3: 2rem;
+    --fs-body: 1rem;
 }
 
 h1 {
     font-family: var(--ff-tri);
-    font-size: 8em;
+    font-size: var(--fs-h1);
     font-weight: 580;
     text-align: center;
     line-height: 100%;
@@ -30,18 +30,17 @@ h1 {
 
 h2 {
     font-family: var(--ff-tri);
-    font-size: 6em;
+    font-size: var(--fs-h2);
     font-weight: 30;
     text-align: center;
     line-height: 100%;
     letter-spacing: 0.2em;
     position: relative;
-    bottom: -0.4em;
 }
 
 h3 {
     font-family: var(--ff-tri);
-    font-size: 2em;
+    font-size: var(--fs-h3);
     font-weight: 10;
     text-align: center;
     line-height: 100%;
@@ -92,8 +91,14 @@ ul {
 
 /* Song & Lyrics - HTML Pages */
 .song {
-    padding: 6em;
+    padding: 2em;
     text-align: center;
+    margin: 0 auto;
+    max-width: 100em;
+}
+
+.song h1 {
+    font-size: 20em;
 }
 
 .song h2 {
