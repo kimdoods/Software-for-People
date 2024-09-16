@@ -20,11 +20,32 @@
 
 h1 {
     font-family: var(--ff-tri);
+    font-size: 8em;
+    font-weight: 580;
+    text-align: center;
+    line-height: 100%;
+    position: relative;
+    bottom: -0.4em;
+}
+
+h2 {
+    font-family: var(--ff-tri);
     font-size: 6em;
-    font-weight: 50;
+    font-weight: 30;
     text-align: center;
     line-height: 100%;
     letter-spacing: 0.2em;
+    position: relative;
+    bottom: -0.4em;
+}
+
+h3 {
+    font-family: var(--ff-tri);
+    font-size: 2em;
+    font-weight: 10;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: 0.1em;
     position: relative;
     bottom: -0.4em;
 }
@@ -33,6 +54,28 @@ p {
     font-family: var(--ff-secondary);
     font-weight: 2em;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(16, 48, 255);
+    font-weight: bold;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+ul {
+    list-style: circle;
+    font-size: 3em;
+}
+
+/* li {
+    p
+} */
 
 .intro {
     padding: 10em;
@@ -47,27 +90,29 @@ p {
     display: center;
 }
 
-.macherie {
+/* Song & Lyrics - HTML Pages */
+.song {
     padding: 6em;
     text-align: center;
 }
 
-.macherie h1 {
+.song h2 {
     position: center;
     font-weight: 50;
     font-size: 6em;
+    bottom: -0.6em;
 }
 
-.macherie p {
+.song p {
     font-weight: 100;
+    white-space: pre-line;
 }
 
-.macherie-vid {
+.song-vid {
     position: center;
 }
 
-.macherie-vid iframe {
+.song-vid iframe {
     border-style: solid;
     border-width: 1em;
 }
-
