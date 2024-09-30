@@ -1,16 +1,6 @@
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-} */
 
 :root {
-    --ff-primary: 'UnifrakturCook', cursive;
-    --ff-secondary: 'Merriweather', serif;
-    --ff-tri: 'Great Vibes', cursive;
-
-    /* --fw-reg: 400;
-    --fw-bold: 700; */
+    /* --ff-primary: 'UnifrakturCook', cursive; */
 
     --fs-h1: 8em;
     --fs-h2: 6em;
@@ -68,12 +58,9 @@ ul {
     font-size: 3em;
 }
 
-/* li {
-    p
-} */
 
 .intro {
-    padding: 10em;
+    padding: 5em;
 }
   
 .intro-paragraph {
@@ -105,9 +92,4 @@ ul {
 .song p {
     font-weight: 100;
     white-space: pre-line;
-}
-
-.song-vid iframe {
-    border-style: solid;
-    border-width: 1em;
 }
