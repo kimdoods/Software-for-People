@@ -1,0 +1,285 @@
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+:root {
+    --ff-base: "Merriweather", serif;
+    --ff-avant: "UnifrakturMaguntia", cursive;
+    --ff-fancy: "Great Vibes", cursive;
+
+    /* --fw-reg: 400;
+    --fw-bold: 700; */
+
+    --fs-h1: 8em;
+    --fs-h2: 6em;
+    --fs-h3: 2rem;
+    --fs-h4: 13em;
+    --fs-body: 1rem;
+}
+
+/* Merriweather Font */
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+  
+.merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+  
+.merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* UnifrakturMaguntia Font */
+.unifrakturmaguntia-regular {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Great Vibes (Cursive) Font */
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-image: url(img/victorian-2.jpeg);
+    background-image: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    margin: 0; 
+}
+
+/* Default Text Sizes and Decor*/
+h1 {
+    font-family: var(--ff-avant);
+    font-size: var(--fs-h1);
+    font-weight: 500;
+    line-height: 110%;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--ff-fancy);
+    font-size: var(--fs-h2);
+    font-weight: 30;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+h3 {
+    font-family: var(--ff-avant);
+    font-size: var(--fs-h3);
+    font-weight: 10;
+    line-height: 100%;
+    text-align: center;
+    bottom: -0.4em;
+}
+
+h4 {
+    font-family: var(--ff-avant);
+    font-size: var(--fs-h4);
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+}
+
+p {
+    font-family: var(--ff-fancy);
+    font-size: 3em;
+}
+
+ul {
+    list-style: none;
+}
+
+.intro-paragraph {
+    text-align: block;
+    padding: 4em;
+    border-style: solid;
+    border-width: 1em;
+    border-spacing: 1em;
+    display: center;
+}
+
+/* Song Intro List Animations/Formatting */
+.intro-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+/* .intro-list a {
+    text-decoration: none;
+    border: none;
+} */
+
+.intro-list li {
+    position: relative;
+    
+}
+
+.image-container {
+    position: relative;
+    display: block;
+}
+
+.intro-list img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    scale: 0.5;
+    margin: 0 auto;
+}
+
+.overlay-text {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts position */
+    text-align: center;
+    width: 50%; /* Optional: limits text width */
+    line-height: 1;
+    font-family: var(--ff-fancy); /* Use a font from your stylesheet */
+    font-size: var(--fs-h2);
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.intro-list a:hover .overlay-text {
+    animation: textFadeIn 1s forwards; /* Text fade-in animation */
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0; /* Start hidden */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.intro-list a:hover {
+    animation: door 3s forwards;
+    transition-delay: 0s; /* Start immediately */
+    transition-timing-function: ease-in-out;
+    position: relative; 
+    border: none;
+    outline: none;
+}
+
+@keyframes door {
+    0% {
+        box-shadow: 0 0 1em rgba(74, 144, 226, 0.8), /* Outer glow */
+                    0 0 1.5em rgba(74, 144, 226, 0.8);
+    }
+    50% {
+        filter: blur(1em) invert(100%) brightness(200%);
+    }
+    100% {
+        filter: blur(0) invert(0) brightness(100%);
+    }
+}
+
+
+/* .intro-list {
+    text-align: block;
+    padding: 1em;
+    border-style: solid;
+    border-width: 1em;
+    border-spacing: 1em;
+    display: center;
+} */
+
+/* Song & Lyrics */
+.song-title {
+    font-size: 2em;
+}
+
+.song-subtitle {
+    font-weight: 50;
+    font-size: 1em;
+    margin-top: -9em;
+}
+
+.song {
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100em;
+}
+
+.song p {
+    font-size: 2em;
+    font-weight: 100;
+    white-space: pre-line;
+}
+
+.song-vid {
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100em;
+}
+
+.youtube-vid {
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    aspect-ratio: 16 / 9;
+    z-index: 1000;
+}
+
+.song-vid iframe {
+    border-style: solid;
+    border-width: 1em;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* Hover Animation */

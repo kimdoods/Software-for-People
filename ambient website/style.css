@@ -1,0 +1,59 @@
+:root {
+    --gra-1: linear-gradient(35deg, rgb(14, 61, 128), rgb(52, 130, 238), rgb(139, 185, 199));
+    --gra-2: linear-gradient(-35deg, rgb(120, 128, 14), rgb(52, 130, 238), rgb(139, 185, 199));
+}
+
+.orb-org {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the orbs */
+    gap: 1em; /* Space between orbs */
+    padding: 1em; /* Add some padding around */
+}
+
+.orb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--gra-1);
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    transition: filter 5s ease-in-out, width 2s ease-in-out, height 2s ease-in-out;
+    animation: faze 10s forwards infinite;
+}
+
+.orb:hover {
+    animation: squeeze 5s forwards;
+    transition-delay: 5s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 0 2em rgba(74, 144, 226, 0.8), /* Outer glow */
+                0 0 2.5em rgba(74, 144, 226, 0.2);
+}
+
+@keyframes faze {
+    0% {
+        box-shadow: 0 0 1em rgba(74, 144, 226, 0.8), /* Outer glow */
+                    0 0 1.5em rgba(74, 144, 226, 0.8);
+    }
+    50% {
+        filter: blur(1em) invert(100%) brightness(200%);
+    }
+    100% {
+        filter: blur(0) invert(0) brightness(100%);
+    }
+}
+
+@keyframes squeeze {
+    0% {
+        filter: blur(0);
+        transform: scale(1);
+    }
+    100% {
+        filter: blur(3em) opacity(0%) brightness(-1000%);
+        width: 1em;
+        height: 15em;
+        transform: scale(0.1);
+    }
+}

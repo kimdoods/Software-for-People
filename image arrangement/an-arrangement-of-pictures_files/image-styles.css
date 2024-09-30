@@ -1,0 +1,63 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  gap: 1em;
+  grid-template-columns: 
+}
+
+body:nth-child(3n + 2) {
+  padding-top: 3em;
+}
+
+img {
+  min-width: 20%;
+  max-width: 60%;
+}
+
+#img-0 {
+  
+}
+
+#img-1 {
+  
+}
+
+#img-2 {
+  
+}
+
+#img-3 {
+  
+}
+
+#img-4 {
+  
+}
+
+#img-5 {
+  
+}
+
+#img-6 {
+  
+}
+
+#img-7 {
+  
+}
+
+#img-8 {
+  
+}
+
+#img-9 {
+  
+}
+
+#img-10 {
+  
+}
+
+#img-11 {
+  
+}
