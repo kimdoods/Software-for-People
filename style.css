@@ -64,32 +64,9 @@ ul {
 }
   
 .intro-paragraph {
-    text-align: block;
     padding: 1em;
     border-style: solid;
     border-width: 1em;
     border-spacing: 1em;
     display: center;
-}
-
-/* Song & Lyrics - HTML Pages */
-.song {
-    padding: 2rem;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 100em;
-}
-
-.song h1 {
-    font-size: 20em;
-}
-
-.song h2 {
-    font-weight: 50;
-    font-size: 6em;
-}
-
-.song p {
-    font-weight: 100;
-    white-space: pre-line;
 }
