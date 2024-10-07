@@ -1,0 +1,57 @@
+:root {
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cauldron {
+    position: relative;
+    margin: 5em;
+}
+
+.cauldron-lid {
+    background-color: rgb(169, 160, 160);
+    width: 20rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute; /* Position the lid absolutely */
+    top: -5rem; /* Adjust position to overlay */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center the lid horizontally */
+    z-index: 1000; /* Ensure it's on top */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the inner circle */
+}
+
+.inner-circle {
+    background-color: lightblue; /* Change to your desired inner circle color */
+    width: 15rem; /* Adjust size as needed */
+    height: 7rem; /* Adjust size as needed */
+    border-radius: 50%; /* Make it a circle */
+}
+
+.potion {
+    background-color: darkorchid;
+    width: 10rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute; /* Position the potion absolutely */
+    top: 30%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, 20%); /* Adjust position to slightly lower */
+}
+
+.cauldron-base {
+    background-color: gray;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 50%;
+    z-index: 1;
+}
